@@ -1,1 +1,11 @@
-<p>photo-list works!</p>
+<h2>Photos in Album {{ albumId }}</h2>
+
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<div class="photo-grid" *ngIf="!loading && !error">
+  <div class="photo" *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+    <p>{{ photo.title }}</p>
+  </div>
+</div>

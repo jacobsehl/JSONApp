@@ -1,1 +1,10 @@
-<p>album-list works!</p>
+<h2>Albums for User {{ userId }}</h2>
+
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<ul *ngIf="!loading && !error">
+  <li *ngFor="let album of albums">
+    <a [routerLink]="['/albums', album.id, 'photos']">{{ album.title }}</a>
+  </li>
+</ul>
