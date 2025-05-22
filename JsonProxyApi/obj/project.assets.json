@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/Dev/SampleApp/JsonProxyApi/JsonProxyApi.csproj",
+      "projectUniqueName": "/home/user/Documents/GitHub/JSONApp/JsonProxyApi/JsonProxyApi.csproj",
       "projectName": "JsonProxyApi",
-      "projectPath": "/home/user/Dev/SampleApp/JsonProxyApi/JsonProxyApi.csproj",
+      "projectPath": "/home/user/Documents/GitHub/JSONApp/JsonProxyApi/JsonProxyApi.csproj",
       "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/Dev/SampleApp/JsonProxyApi/obj/",
+      "outputPath": "/home/user/Documents/GitHub/JSONApp/JsonProxyApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/user/.nuget/NuGet/NuGet.Config"

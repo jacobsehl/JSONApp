@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XmciWkpetD4=",
+  "dgSpecHash": "NZjtUsFsIlM=",
   "success": true,
-  "projectFilePath": "/home/user/Dev/SampleApp/JsonProxyApi/JsonProxyApi.csproj",
+  "projectFilePath": "/home/user/Documents/GitHub/JSONApp/JsonProxyApi/JsonProxyApi.csproj",
   "expectedPackageFiles": [
     "/home/user/.nuget/packages/microsoft.aspnetcore.openapi/8.0.16/microsoft.aspnetcore.openapi.8.0.16.nupkg.sha512",
     "/home/user/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

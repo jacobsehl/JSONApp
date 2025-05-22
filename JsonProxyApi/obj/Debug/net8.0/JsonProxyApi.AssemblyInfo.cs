@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JsonProxyApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ced5037ca17512988794dd71ff8b2d2631c4ca51")]
 [assembly: System.Reflection.AssemblyProductAttribute("JsonProxyApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JsonProxyApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
