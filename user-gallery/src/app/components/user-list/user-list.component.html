@@ -4,8 +4,13 @@
 <div *ngIf="error">{{ error }}</div>
 
 <div class="user-grid" *ngIf="!loading && !error">
-  <div class="user-card" *ngFor="let user of users">
-    <a [routerLink]="['/users', user.id, 'albums']">{{ user.name }}</a>
+  <div
+    class="user-card"
+    *ngFor="let user of users"
+    [routerLink]="['/users', user.id, 'albums']"
+  >
+    <h3>{{ user.name }}</h3>
     <p>{{ user.email }}</p>
+    <p>{{ user.company?.name }}</p>
   </div>
 </div>

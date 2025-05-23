@@ -3,8 +3,9 @@
 <div *ngIf="loading">Loading...</div>
 <div *ngIf="error">{{ error }}</div>
 
-<ul *ngIf="!loading && !error">
-  <li *ngFor="let album of albums">
-    <a [routerLink]="['/albums', album.id, 'photos']">{{ album.title }}</a>
-  </li>
-</ul>
+<div class="album-grid" *ngIf="!loading && !error">
+  <div class="album-card" *ngFor="let album of albums" [routerLink]="['/albums', album.id, 'photos']">
+    <img *ngIf="album.thumbnailUrl" [src]="album.thumbnailUrl" [alt]="album.title" />
+    <p>{{ album.title }}</p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.album-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007bff;
+  }
+}
