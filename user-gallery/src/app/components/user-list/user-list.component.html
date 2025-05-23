@@ -1,10 +1,11 @@
-<h2>User List</h2>
+<h2>Users</h2>
 
 <div *ngIf="loading">Loading...</div>
 <div *ngIf="error">{{ error }}</div>
 
-<ul *ngIf="!loading && !error">
-  <li *ngFor="let user of users">
+<div class="user-grid" *ngIf="!loading && !error">
+  <div class="user-card" *ngFor="let user of users">
     <a [routerLink]="['/users', user.id, 'albums']">{{ user.name }}</a>
-  </li>
-</ul>
+    <p>{{ user.email }}</p>
+  </div>
+</div>
