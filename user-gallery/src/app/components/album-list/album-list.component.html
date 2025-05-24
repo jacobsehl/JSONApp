@@ -4,7 +4,11 @@
 <div *ngIf="error">{{ error }}</div>
 
 <div class="album-grid" *ngIf="!loading && !error">
-  <div class="album-card" *ngFor="let album of albums" [routerLink]="['/albums', album.id, 'photos']">
+  <div 
+  class="album-card" 
+  *ngFor="let album of albums" 
+  [routerLink]="['/albums', album.id, 'photos']"
+  [title]="'GET /api/albums/' + album.id + '/photos'">
     <img *ngIf="album.thumbnailUrl" [src]="album.thumbnailUrl" [alt]="album.title" />
     <p>{{ album.id }}. {{ album.title }}</p>
   </div>
