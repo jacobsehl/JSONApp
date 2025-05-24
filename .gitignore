@@ -9,6 +9,8 @@
 # Node
 user-gallery/node_modules/
 user-gallery/dist/
+JsonProxyApi/debug
+/JsonProxyApi/debug
 /node_modules
 npm-debug.log
 yarn-error.log
