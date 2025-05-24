@@ -6,6 +6,6 @@
 <div class="album-grid" *ngIf="!loading && !error">
   <div class="album-card" *ngFor="let album of albums" [routerLink]="['/albums', album.id, 'photos']">
     <img *ngIf="album.thumbnailUrl" [src]="album.thumbnailUrl" [alt]="album.title" />
-    <p>{{ album.title }}</p>
+    <p>{{ album.id }}. {{ album.title }}</p>
   </div>
 </div>

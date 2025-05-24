@@ -4,8 +4,8 @@
 <div *ngIf="error">{{ error }}</div>
 
 <div class="photo-grid" *ngIf="!loading && !error">
-  <div class="photo" *ngFor="let photo of photos">
+  <div class="photo-card" *ngFor="let photo of photos">
     <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
-    <p>{{ photo.title }}</p>
+    <p>{{ photo.id }}. {{ photo.title }}</p>
   </div>
 </div>
